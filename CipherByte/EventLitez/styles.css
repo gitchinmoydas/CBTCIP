@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Vibrant gradient background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 600px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Subtle 3D card background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15), -8px -8px 20px rgba(255, 255, 255, 0.7); /* 3D effect */
+    animation: fadeIn 0.8s ease-in-out;
+    transform: translateY(0);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Text shadow for 3D effect */
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Event Form */
+  .event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .event-form input,
+  .event-form button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1), inset -4px -4px 8px rgba(255, 255, 255, 0.7); /* Inner 3D effect */
+    transition: all 0.3s ease;
+  }
+  
+  .event-form input:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5), inset 0 0 10px rgba(0, 123, 255, 0.1); /* Glow effect */
+    outline: none;
+  }
+  
+  .event-form button {
+    background: linear-gradient(145deg, #007bff, #0056b3); /* Vibrant gradient button */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15), -6px -6px 12px rgba(255, 255, 255, 0.7); /* 3D effect */
+  }
+  
+  .event-form button:hover {
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Event List */
+  .event-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .event-list li {
+    background: linear-gradient(145deg, #f1f1f1, #dcdcdc); /* Card-like effect for list items */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 8px solid #007bff;
+    border-radius: 12px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px rgba(255, 255, 255, 0.7); /* 3D effect */
+    transition: transform 0.3s, box-shadow 0.3s ease;
+  }
+  
+  .event-list li:hover {
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(255, 255, 255, 0.9);
+  }
+  
+  .event-list .event-details {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+  }
+  /* Delete Button */
+.delete-btn {
+  background: linear-gradient(145deg, #ff4d4d, #cc0000); /* Vibrant delete button color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15), -4px -4px 8px rgba(255, 255, 255, 0.7); /* 3D effect */
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(145deg, #cc0000, #ff1a1a); /* Hover color */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2), -6px -6px 12px rgba(255, 255, 255, 0.9);
+}
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1, h2 {
+      font-size: 1.8em;
+    }
+  
+    .event-form input,
+    .event-form button {
+      font-size: 14px;
+    }
+  }
+  
